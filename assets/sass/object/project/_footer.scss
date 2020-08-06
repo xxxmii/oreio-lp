@@ -6,6 +6,9 @@
         padding: 10px 0;
         background-color: $white;
         font-size: rem(12);
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        line-height: 2;
     }
     &__item {
         margin-right: 35px;
@@ -25,5 +28,7 @@
         font-size: rem(13);
         font-weight: 400;
         margin-bottom: 15px;
+        letter-spacing: 1.95px;
+        line-height: 1.2;
     }
 }

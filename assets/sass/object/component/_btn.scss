@@ -1,7 +1,8 @@
 .btn {
     display: inline-block;
+    min-width: 260px;
     max-width: 100%;
-    padding: 20px 30px;
+    padding: 18px 30px;
     background-color: $main-color;
     border: 2px solid transparent;
     color: #ffffff;
@@ -49,8 +50,8 @@
     text-align: center;
     @include MPLUSRounded1c;
     font-size: rem(15);
-    letter-spacing: 0.75;
     border-radius: 30px;
+    letter-spacing: 0.75px;
 
     &:focus,
     &:hover {
