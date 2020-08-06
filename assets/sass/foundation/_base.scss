@@ -9,18 +9,17 @@ html {
 }
 
 body {
-  background: $base-bg;
-  color: $base-font;
+  background: $white;
+  color: $text-color;
   font-size: rem(16);
-  @include MPlus1p;
+  @include MPLUSRounded1c;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 img {
   display: block;
-  // width: 100%;
-  // todo 元に戻す。
-  width: 200px;
+  width: 100%;
   height: auto;
 }
 

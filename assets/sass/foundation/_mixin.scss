@@ -1,6 +1,15 @@
 /* font-family */
-@mixin MPlus1p {
-    font-family: "M PLUS 1p", sans-serif;
+@mixin MPLUSRounded1c {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+@mixin NotoSansJP {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+// adobeフォントのリンクわからないから仮
+@mixin KorolevRounded {
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 /* media query */

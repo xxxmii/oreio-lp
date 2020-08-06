@@ -1,0 +1,29 @@
+.footer {
+    background-color: $main-color;
+
+    &__copyright {
+        text-align: center;
+        padding: 10px 0;
+        background-color: $white;
+        font-size: rem(12);
+    }
+    &__item {
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__logo {
+        margin: 0 auto;
+        padding: 40px 0;
+        width: 200px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        font-size: rem(13);
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+}
