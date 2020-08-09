@@ -143,12 +143,22 @@
         }
         &-img {
             margin-bottom: 20px;
+            box-shadow: 0 5px 15px 0 rgba(51, 51, 51, 0.2);
+
+            &:hover {
+                box-shadow: 0 5px 15px 0 rgba(51, 51, 51, 0.4);
+            }
         }
+
         &-title {
             margin-bottom: 15px;
             letter-spacing: 2px;
             font-size: 20px;
             font-weight: 800;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -200,6 +210,9 @@
     display: flex;
     flex-wrap: wrap;
 
+    &__link {
+        color: $text-color;
+    }
     &__item {
         border-radius: 10px;
         background-color: $white;
@@ -208,6 +221,10 @@
         margin-right: 20px;
         margin-bottom: 20px;
         padding: 20px;
+
+        &:hover {
+            border: $main-color 5px solid;
+        }
     }
     &__item-content {
         font-size: rem(14);
