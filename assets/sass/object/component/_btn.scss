@@ -77,6 +77,22 @@
 .btn-area {
     text-align: center;
 }
+@include laptop {
+    .case {
+        .case-gifts {
+            .btn-area {
+                .btn {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
 
 .toggle-switch {
     position: relative;

@@ -14,4 +14,16 @@ $(function () {
         return false;
     });
 
+    //=======ハンガーメニュー=======
+    $('#js-hamburger').on('click', function () {
+        $(this).toggleClass('is-active');
+        $('body').toggleClass('nav-open');
+    });
+
+    //メニューをクリックしたときにドロワーを閉じる（※ページ内遷移の時のみ必要）
+    $('nav a[href^="#"]').on('click', function (e) {
+        $('#js-hamburger').toggleClass('is-active');
+        $('body').toggleClass('nav-open');
+    });
+
 });

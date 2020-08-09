@@ -28,13 +28,30 @@
 
 <body>
   <header class="header">
-    <nav>
-      <ul class="header__list">
-        <li class="header__item"><a href="" class="btn-small btn-small--light">EC店舗様はこちら</a></li>
-        <li class="header__item"><a href="" class="btn-small">新規登録</a></li>
-        <li class="header__item"><a href="" class="btn-small btn-small--white">ログイン</a></li>
-      </ul>
-    </nav>
+    <ul class="header__list">
+      <li class="header__item"><a href="" class="btn-small btn-small--light">EC店舗様はこちら</a></li>
+      <li class="header__item"><a href="" class="btn-small">新規登録</a></li>
+      <li class="header__item"><a href="" class="btn-small btn-small--white">ログイン</a></li>
+    </ul>
+
+    <div class="header__menu">
+      <div class="header__logo"><img src="/assets/img/favicon.png" alt="CCO vol2"></div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="">メニュー１</a></li>
+          <li class="header__nav-item"><a href="">メニュー２</a></li>
+          <li class="header__nav-item"><a href="">メニュー３</a></li>
+          <li class="header__nav-item"><a href="">メニュー４</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburger">
+      <button id="js-hamburger" type="button" class="hamburger__trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
   <main class="main">
     <section class="top">
@@ -125,8 +142,8 @@
     <section class="system bg-light-orange">
       <div class="inner">
         <h2 class="section__heading">OREIOの仕組み</h2>
-        <p class="system__desc">OREIOは、新型コロナウイルス（COVID-19）の影響で売り上げが下がった地方の生産者・小売店や<br>
-          オフラインでのイベント開催が困難になったイベント主催者のために作られたサービスです。<br>
+        <p class="system__desc">
+          OREIOは、新型コロナウイルス（COVID-19）の影響で売り上げが下がった地方の生産者・小売店やオフラインでのイベント開催が困難になったイベント主催者のために作られたサービスです。<br>
           手数料を差し引いたイベント参加者費は、EC店舗とイベント主催者に分配されます。
         </p>
         <figure class="system__img">

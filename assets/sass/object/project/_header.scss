@@ -1,11 +1,5 @@
 .header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px;
-    position: fixed;
-    right: 0;
-    z-index: 10;
+    position: relative;
 
     &__item {
         margin-right: 10px;
@@ -16,5 +10,65 @@
     }
     &__list {
         display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+        position: fixed;
+        right: 0;
+        z-index: 1;
+    }
+
+    &__menu {
+        display: none;
+    }
+}
+
+@include tablet {
+    .header {
+        &__logo {
+            display: block;
+            width: 50%;
+            margin: 25px auto 50px;
+        }
+        &__menu {
+            display: block;
+            justify-content: flex-start;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 40%;
+            max-width: 300px;
+            height: 100%;
+            padding: 0 20px;
+            z-index: 2;
+            background-color: $main-color;
+            transform: translateX(100%);
+            transition: transform 0.8s;
+        }
+        &__nav {
+            padding: 0;
+            width: 100%;
+        }
+        &__nav-list {
+            flex-direction: column;
+        }
+        &__nav-item {
+            position: relative;
+            margin-right: 0;
+            margin-bottom: 25px;
+
+            a {
+                font-size: rem(16);
+                letter-spacing: 0.8px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    // menuを開いたとき
+    .nav-open .header__menu {
+        transform: translateX(0);
+        box-shadow: 0 0 5px 0 rgba($color: $shadow, $alpha: 0.5);
     }
 }
