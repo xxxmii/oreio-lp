@@ -25,6 +25,10 @@
 
 @include tablet {
     .header {
+        &__list {
+            display: none;
+        }
+
         &__logo {
             display: block;
             width: 50%;
@@ -38,7 +42,7 @@
             top: 0;
             right: 0;
             width: 40%;
-            max-width: 300px;
+            min-width: 300px;
             height: 100%;
             padding: 0 20px;
             z-index: 2;

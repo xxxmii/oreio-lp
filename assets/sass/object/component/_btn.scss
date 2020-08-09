@@ -39,6 +39,11 @@
         }
     }
 }
+@include sp {
+    .btn {
+        width: 100%;
+    }
+}
 
 .btn-small {
     display: inline-block;
@@ -116,7 +121,7 @@
     position: relative;
     border: 4px solid #e4e4e4;
     border-radius: 40px;
-    transition: 0.4s;
+    transition: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
 
@@ -163,4 +168,34 @@
 }
 .toggle-input:checked ~ .usage__organizer {
     display: block;
+}
+@include sp {
+    .toggle-switch {
+        display: flex;
+        flex-direction: column;
+    }
+    .toggle-label {
+        padding: 15px 10px;
+        width: 300px;
+
+        &:after {
+            padding: 15px 10px;
+            font-size: rem(16);
+            width: 150px;
+        }
+
+        .toggle-label-value {
+            font-size: rem(16);
+        }
+    }
+
+    .toggle-input:checked {
+        + .toggle-label {
+            &:after {
+                content: "イベント主催者";
+                background-color: $btn-color4;
+                left: 142px;
+            }
+        }
+    }
 }

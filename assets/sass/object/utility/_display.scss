@@ -1,0 +1,36 @@
+.bold {
+    font-weight: 700;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@include sp {
+    .flex__sp {
+        &-order1 {
+            order: 1;
+        }
+        &-order2 {
+            order: 2;
+        }
+        &-order3 {
+            order: 3;
+        }
+        &-order4 {
+            order: 4;
+        }
+    }
+}
+
+.sp-show {
+    display: none;
+}
+@include sp {
+    .sp-show {
+        display: block;
+    }
+    .sp-none {
+        display: none;
+    }
+}

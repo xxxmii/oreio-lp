@@ -33,8 +33,8 @@
       <li class="header__item"><a href="" class="btn-small">新規登録</a></li>
       <li class="header__item"><a href="" class="btn-small btn-small--white">ログイン</a></li>
     </ul>
-
     <div class="header__menu">
+      <!-- todo 白ロゴに変える -->
       <div class="header__logo"><img src="/assets/img/favicon.png" alt="CCO vol2"></div>
       <nav class="header__nav">
         <ul class="header__nav-list">
@@ -53,16 +53,16 @@
       </button>
     </div>
   </header>
+
   <main class="main">
     <section class="top">
       <div class="top__heading">
-        <div class="top__heading-inner">
-          <figure class="top__logo-img">
-            <img src="/assets/img/logo.svg" alt="">
-          </figure>
-          <!-- <h1>OREIO</h1> -->
-          <p class="top__desc">オンラインイベントに参加すると、<br>地域の名産品が返礼品としてもらえる！</p>
-        </div>
+        <figure class="top__logo-img">
+          <img src="/assets/img/logo.svg" alt="" class="sp-none">
+          <img src="/assets/img/logo_square.svg" alt="" class="sp-show">
+        </figure>
+        <!-- <h1>OREIO</h1> -->
+        <p class="top__desc">オンラインイベントに参加すると、<br>地域の名産品が返礼品としてもらえる！</p>
       </div>
       <figure class="top__mv">
         <img src="/assets/img/mv.svg" alt="">
@@ -85,12 +85,12 @@
     <section class="usage section">
       <div class="inner">
         <h2 class="section__heading">使い方</h2>
-        <div class="toggle-switch">
-          <input id="toggle" class="toggle-input" type='checkbox' />
-          <label for="toggle" class="toggle-label"><span class="toggle-label-value">イベント参加者</span><span
+        <div class="toggle-switch flex-column">
+          <input id="toggle" class="toggle-input flex__sp-order1" type='checkbox' />
+          <label for="toggle" class="toggle-label flex__sp-order3"><span class="toggle-label-value">イベント参加者</span><span
               class="toggle-label-value">イベント主催者</span></label>
-          <p class="usage__desc">使い方は簡単！OREIO内に掲載されているオンラインイベントに参加申し込みをするだけ！</p>
-          <div class="usage__participant">
+          <p class="usage__desc flex__sp-order2">使い方は簡単！OREIO内に掲載されているオンラインイベントに参加申し込みをするだけ！</p>
+          <div class="usage__participant flex__sp-order4">
             <div class="usage__detail">
               <figure class="usage__detail-item"><img src="/assets/img/参加者1.svg" alt=""></figure>
               <figure class="usage__detail-item"><img src="/assets/img/参加者2.svg" alt=""></figure>
@@ -100,7 +100,7 @@
             </div>
             <div class="btn-area"><a href="" class="btn">イベントをさがす</a></div>
           </div>
-          <div class="usage__organizer">
+          <div class="usage__organizer flex__sp-order4">
             <div class="usage__detail">
               <figure class="usage__detail-item"><img src="/assets/img/主催者1.svg" alt=""></figure>
               <figure class="usage__detail-item"><img src="/assets/img/主催者2.svg" alt=""></figure>
@@ -112,7 +112,6 @@
           </div>
         </div>
       </div>
-
     </section>
 
     <section class="event-sample section">
@@ -327,17 +326,18 @@
           <br>
           <br>「OREIO」は、EC店舗、イベント主催者、イベント参加者の三者それぞれが抱えている課題を解決できるよう、 また、多くのメリットが得られるように考えられました。
           <br>
-          <br>EC店舗は
-          「オンラインイベント参加者を販売対象にすることで、一度に数十〜数百件の受注が見込める」
+          <br><span class="bold">EC店舗は</span>
+          <br>「オンラインイベント参加者を販売対象にすることで、一度に数十〜数百件の受注が見込める」
           <br>「全国の人たちに商品を知ってもらうことができる」
           <br>「今までアプローチできなかった層に商品を届けられるので、新規顧客の獲得に繋がる」
           <br>
-          <br>イベント運営者は 「オンラインイベントだと、オフラインイベントと同じ料金を取りづらかったという問題を解決できる」
+          <br><span class="bold">イベント運営者は</span>
+          <br>「オンラインイベントだと、オフラインイベントと同じ料金を取りづらかったという問題を解決できる」
           <br>「地域の商品を送ることで、オンラインで地方イベントをやる意味づけをできる」
           <br>「時間的・場所的な制約でオフラインイベントに参加できなかった層の集客ができる」
           <br>「イベントを開催するだけで地域貢献ができる」
           <br>
-          <br>イベント参加者は
+          <br><span class="bold">イベント参加者は</span>
           <br>「いつものイベント料金で全国のオンラインイベントに参加できる上、その地域の返礼品までもらえる」
           <br>「オンラインで参加地域がバラバラでも、参加者同士で同じ商品を手にすることで一体感が得られる」
           <br>「今まで自分では手に取ることがなかった/知らなかった商品を知れる」
