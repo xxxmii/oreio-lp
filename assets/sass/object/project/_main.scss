@@ -125,7 +125,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto;
-    max-width: 400px;
 
     &__item {
         width: calc((100% - 120px) / 4);
@@ -171,6 +170,8 @@
         }
     }
     .case-gifts {
+        max-width: 400px;
+
         &__item {
             width: 100%;
 
