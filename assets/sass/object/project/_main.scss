@@ -270,7 +270,7 @@
 
         &__item {
             width: 100%;
-            margin-bottom: 50px;
+            margin: 0 auto 50px;
 
             &:last-child {
                 margin-bottom: 0;
@@ -295,7 +295,8 @@
         }
 
         &-img {
-            margin-bottom: 35px;
+            margin: 0 auto 35px;
+            max-width: 315px;
         }
     }
     &__item-desc {
@@ -884,6 +885,7 @@
         &__detail {
             margin-left: 0;
             margin-bottom: 0;
+            max-width: 315px;
 
             &-item {
                 width: 100%;
