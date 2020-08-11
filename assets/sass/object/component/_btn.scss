@@ -12,11 +12,11 @@
     font-weight: 700;
     border-radius: 40px;
     letter-spacing: 1px;
+    line-height: 1;
 
     &:focus,
     &:hover {
-        // todo hoverの色確認
-        opacity: 0.9;
+        background-color: #ff6011;
     }
 
     &--light {
@@ -57,15 +57,20 @@
     font-size: rem(15);
     border-radius: 30px;
     letter-spacing: 0.75px;
+    line-height: 1;
 
     &:focus,
     &:hover {
-        // todo hoverの色確認
-        opacity: 0.9;
+        background-color: #ff6011;
     }
 
     &--light {
         background-color: $btn-color3;
+
+        &:focus,
+        &:hover {
+            background-color: #ffc811;
+        }
     }
     &--white {
         background-color: $white;
@@ -124,6 +129,7 @@
     transition: 0.3s;
     box-sizing: border-box;
     cursor: pointer;
+    line-height: 1;
 
     &:after {
         content: "イベント参加者";
