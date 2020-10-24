@@ -348,7 +348,7 @@
     }
 }
 .main {
-    background-image: url("/assets/img/mv_back.svg");
+    background-image: url("../img/mv_back.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center 50px;
@@ -356,7 +356,7 @@
 }
 @include tablet {
     .main {
-        background-image: url("/assets/img/spmv_back.svg");
+        background-image: url("../img/spmv_back.svg");
     }
 }
 .media {
@@ -792,7 +792,7 @@
     }
 }
 .usage {
-    background-image: url("/assets/img/back1.svg"), url("/assets/img/back2.svg");
+    background-image: url("../img/back1.svg"), url("../img/back2.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: contain, contain;
     background-position: left -200px, right -200px;
@@ -837,7 +837,7 @@
                     width: 12px;
                     height: 24px;
                     padding: 15px;
-                    background: url("/assets/img/arrow-orange.svg") no-repeat;
+                    background: url("../img/arrow-orange.svg") no-repeat;
                     transform: translateY(-50%);
                 }
                 .usage__organizer &::before {
@@ -848,7 +848,7 @@
                     width: 12px;
                     height: 24px;
                     padding: 15px;
-                    background: url("/assets/img/arrow-red.svg") no-repeat;
+                    background: url("../img/arrow-red.svg") no-repeat;
                     transform: translateY(-50%);
                 }
             }
@@ -909,7 +909,7 @@
                         width: 12px;
                         height: 24px;
                         padding: 15px;
-                        background: url("/assets/img/arrow-orange.svg") no-repeat;
+                        background: url("../img/arrow-orange.svg") no-repeat;
                         transform: translateX(-50%) rotate(90deg);
                     }
                     .usage__organizer &::before {
@@ -920,7 +920,7 @@
                         width: 12px;
                         height: 24px;
                         padding: 15px;
-                        background: url("/assets/img/arrow-red.svg") no-repeat;
+                        background: url("../img/arrow-red.svg") no-repeat;
                         transform: translateX(-50%) rotate(90deg);
                     }
                 }
