@@ -85,8 +85,10 @@
     }
 }
 .btn-area {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
 @include laptop {
     .case {
         .case-gifts {
